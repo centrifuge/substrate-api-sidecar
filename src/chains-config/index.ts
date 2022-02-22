@@ -7,6 +7,7 @@ import { ControllerConfig } from '../types/chains-config';
 import { acalaControllers } from './acalaControllers';
 import { astarControllers } from './astarControllers';
 import { calamariControllers } from './calamariControllers';
+import { centrifugeControllers } from './centrifugeControllers';
 import { crustControllers } from './crustControllers';
 import { defaultControllers } from './defaultControllers';
 import { dockMainnetControllers } from './dockMainnetControllers';
@@ -49,6 +50,7 @@ const specToControllerMap = {
 	acala: acalaControllers,
 	manta: mantaControllers,
 	crust: crustControllers,
+	centrifuge: centrifugeControllers,
 };
 
 /**

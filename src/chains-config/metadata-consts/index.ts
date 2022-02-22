@@ -9,6 +9,7 @@ import {
 import { acalaDefinitions } from './acalaConsts';
 import { astarDefinitions } from './astarConsts';
 import { calamariDefinitions } from './calamariConsts';
+import { centrifugeDefinitions } from './centrifugeConsts';
 import { crustDefinitions } from './crustConsts';
 import {
 	dockMainnetDefinitions,
@@ -112,6 +113,8 @@ export function getBlockWeight(specName: string): BlockWeightStore {
 			return generateBlockWeightStore(mantaDefinitions);
 		case 'crust':
 			return generateBlockWeightStore(crustDefinitions);
+		case 'centrifuge':
+			return generateBlockWeightStore(centrifugeDefinitions);
 		default:
 			return {};
 	}
