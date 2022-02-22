@@ -5,7 +5,7 @@ import { getBlockWeight } from './metadata-consts';
 /**
  * Controllers for Centrifuge collator
  */
-export const centrifugeControllers: ControllerConfig = {
+export const centrifugeChainControllers: ControllerConfig = {
 	controllers: [
 		'AccountsBalanceInfo',
 		'AccountsValidate',
@@ -27,7 +27,7 @@ export const centrifugeControllers: ControllerConfig = {
 	options: {
 		finalizes: true,
 		minCalcFeeRuntime: 245,
-		blockWeightStore: getBlockWeight('centrifuge'),
+		blockWeightStore: getBlockWeight('centrifuge-chain'),
 		blockStore: initLRUCache(),
 	},
 };
